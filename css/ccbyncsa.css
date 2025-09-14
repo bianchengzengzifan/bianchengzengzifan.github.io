@@ -1,0 +1,46 @@
+.ccbyncsa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: rgba(15,15,25,0.13);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+.ccbyncsa .container {
+  width: 100%;
+}
+.ccbyncsa .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ccbyncsa .col-md-12 {
+  flex: 1;
+}
+.ccbyncsa .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ccbyncsa .author,
+.ccbyncsa .title,
+.ccbyncsa .publish,
+.ccbyncsa .ccbyncsa-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ccbyncsa .author p:first-child,
+.ccbyncsa .title p:first-child,
+.ccbyncsa .publish p:first-child,
+.ccbyncsa .ccbyncsa-icon p:first-child {
+  margin-bottom: 5px; /* 根据需要调整间距 */
+}
+.ccbyncsa .ccbyncsa-icon img {
+  width: 32px; /* 根据实际图标大小调整 */
+  height: auto;
+}

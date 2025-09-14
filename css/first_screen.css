@@ -1,0 +1,111 @@
+.first-screen {
+  position: sticky;
+  height: 100vh;
+  z-index: 1;
+/* 通用容器样式 */
+/* 左上角三角形容器 */
+/* 右下角三角形容器 */
+}
+.first-screen [class$="-container"] {
+  position: relative;
+  height: 50%;
+  z-index: 2;
+/* 通过伪元素实现背景和剪裁 */
+/* 内容容器始终在上层 */
+}
+.first-screen [class$="-container"]::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* 背景层 */
+}
+.first-screen [class$="-container"] .container {
+  position: absolute;
+  z-index: 2;
+}
+.first-screen .lefttop-container::before {
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  background: rgba(0,0,0,0.342);
+}
+.first-screen .lefttop-container .container {
+  top: 15%;
+  left: 15%;
+}
+.first-screen .rightbottom-container::before {
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  background: rgba(129,129,129,0.363);
+}
+.first-screen .rightbottom-container .container {
+  bottom: 15%;
+  right: 15%;
+/* 社交链接网格优化 */
+}
+.first-screen .rightbottom-container .container .social_links {
+  display: grid;
+  gap: 15px; /* 增加间距 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+/* 图片尺寸控制 */
+/* 可选：悬停放大效果 */
+}
+.first-screen .rightbottom-container .container .social_links img {
+  width: 35px;
+  height: 35px; /* 固定宽高比 */
+  object-fit: contain; /* 防止拉伸 */
+  transition: transform 0.3s; /* 悬停动效 */
+}
+.first-screen .rightbottom-container .container .social_links a:hover img {
+  transform: scale(1.1);
+}
+.first-screen .description-io {
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.205);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+.first-screen .typed-cursor,
+.first-screen .cursor {
+  font-size: 1.5rem;
+  color: #0ff;
+  animation: blink 0.7s infinite;
+}
+@-moz-keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-o-keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

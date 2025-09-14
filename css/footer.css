@@ -1,0 +1,40 @@
+footer {
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: auto;
+}
+footer .footer-links {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+footer .footer-links a {
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+footer .footer-links a:hover {
+  opacity: 0.8;
+}
+footer .footer-links a img {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
+footer .footer-text-links {
+  margin-top: 1rem;
+}
+footer .footer-text-links a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+footer .footer-text-links a:hover {
+  color: #333;
+  text-decoration: underline;
+}

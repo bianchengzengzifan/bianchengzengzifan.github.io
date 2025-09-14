@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'DouyinSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/DouyinSans/DouyinSansBold.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/JetBrainsMono/JetBrainsMono-Regular.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/JetBrainsMono/JetBrainsMono-Bold.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/JetBrainsMono/JetBrainsMono-Italic.woff2") format('woff2');
+}
+html {
+  font-family: 'DouyinSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+code,
+pre,
+.highlight pre,
+.hljs,
+.gutter pre {
+  font-family: 'JetBrains Mono', Consolas, Monaco, monospace !important;
+  font-feature-settings: "liga" 0;
+}

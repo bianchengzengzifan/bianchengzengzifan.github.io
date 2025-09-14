@@ -1,0 +1,65 @@
+.paginator {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.paginator .page-number,
+.paginator .extend {
+  min-width: 45px;
+  height: 45px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  color: #0ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+}
+.paginator .page-number:hover,
+.paginator .extend:hover {
+  background: rgba(255,255,255,0.2);
+  color: #6ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.paginator .page-number.current,
+.paginator .extend.current {
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  font-weight: bold;
+  border-color: rgba(255,255,255,0.3);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.paginator .page-number.current:hover,
+.paginator .extend.current:hover {
+  transform: none;
+}
+.paginator .space {
+  padding: 0 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.paginator .extend {
+  font-weight: bold;
+  min-width: 60px;
+}
+.paginator .extend.prev {
+  margin-right: 10px;
+}
+.paginator .extend.next {
+  margin-left: 10px;
+}
+.paginator nav {
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

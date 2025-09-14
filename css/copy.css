@@ -1,0 +1,16 @@
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #282828; /* 按钮背景颜色 */
+  color: #fff; /* 按钮文本颜色 */
+  border: 1px solid #444; /* 按钮边框颜色 */
+  border-radius: 4px;
+  font-size: 12px; /* 按钮字体大小 */
+  z-index: 10; /* 确保按钮在代码块之上 */
+}
+.copy-btn:hover {
+  background-color: #383838; /* 按钮悬停背景颜色 */
+}

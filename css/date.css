@@ -1,0 +1,14 @@
+.site-date {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  min-height: 10%;
+}
+.site-date #date {
+  text-align: center;
+  margin: auto;
+  font-size: 4.2em;
+  color: #777;
+  font-family: 'Arial', sans-serif;
+  z-index: 1000;
+}

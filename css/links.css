@@ -1,0 +1,50 @@
+.links-page {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.links-page h1 {
+  text-align: center;
+  margin-top: 4em;
+  color: #fff;
+}
+.links-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.links-list .link-item {
+  background: rgba(255,255,255,0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #0ff;
+  font-size: 1em;
+  text-align: center;
+}
+.links-list .link-item:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.links-list .link-item a {
+  color: #0ff;
+  text-decoration: none;
+}
+.links-list .link-item a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.links-list .link-item a .link-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.links-list .link-item a .link-description {
+  color: #0ff;
+  font-size: 0.9em;
+}

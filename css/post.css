@@ -1,0 +1,298 @@
+.post-container {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+  background: rgba(15,15,25,0.15);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15), 0 0 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post-container:hover {
+  box-shadow: 0 15px 50px rgba(0,0,0,0.2), 0 0 25px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+  .post-container {
+    max-width: 95%;
+    padding: 1rem;
+  }
+}
+.post-title {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+.post-meta {
+  color: #a8a8b8;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+.post-content {
+  color: #e4e4e4;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+}
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  color: #fff;
+  margin: 2.5rem 0 1.2rem;
+  font-weight: 700;
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.post-content h1::after,
+.post-content h2::after,
+.post-content h3::after,
+.post-content h4::after,
+.post-content h5::after,
+.post-content h6::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(127,166,255,0.8), rgba(127,166,255,0.2));
+  border-radius: 3px;
+}
+.post-content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+.post-content p code,
+.post-content p pre {
+  text-align: left;
+}
+.post-content blockquote {
+  margin: 1.5rem 0;
+  padding: 1.2rem 1.5rem;
+  border-left: 4px solid rgba(0,255,255,0.3);
+  background: rgba(0,0,0,0.25);
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+}
+.post-content blockquote p {
+  margin-bottom: 0;
+}
+.post-content ul,
+.post-content ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+.post-content ul li,
+.post-content ol li {
+  margin: 0.5rem 0;
+}
+.post-content .highlight {
+  overflow-x: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+.post-content code {
+  background: rgba(40,44,68,0.5);
+  color: #ff7edb;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+  font-size: 0.9em;
+  letter-spacing: 0;
+  border: 1px solid rgba(100,100,255,0.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.post-content p > code,
+.post-content li > code,
+.post-content td > code {
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+.post-content pre {
+  background: rgba(40,44,68,0.3);
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(100,100,255,0.12);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.post-content pre:hover {
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+}
+.post-content pre::before,
+.post-content pre::after {
+  display: none;
+}
+.post-content pre code {
+  background: none;
+  padding: 0.5em;
+  border: none;
+  box-shadow: none;
+  color: inherit;
+  text-align: left;
+  font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+}
+.post-content .highlight pre,
+.post-content .highlight code,
+.post-content .highlight .line {
+  text-align: left !important;
+  justify-content: flex-start !important;
+}
+.post-content img {
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+.post-content table th,
+.post-content table td {
+  padding: 0.75rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.02);
+  text-align: center;
+}
+.post-content table th {
+  background: rgba(127,166,255,0.1);
+}
+.post-content hr {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: 2rem 0;
+}
+.post-content a {
+  color: #0ff;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0,255,255,0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0 2px;
+}
+.post-content a:hover {
+  color: #80ffff;
+  border-bottom-style: solid;
+  background: rgba(0,255,255,0.08);
+  border-radius: 2px;
+}
+.post-content strong,
+.post-content b {
+  color: #ffc66d;
+}
+.post-content em,
+.post-content i {
+  color: #8be9fd;
+}
+.post-content u {
+  text-decoration: underline;
+  color: #e06c75;
+}
+.post-content mark {
+  background: #ffeb3b;
+  color: #000;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+.post-content del {
+  color: #f8f8f2;
+  text-decoration: line-through;
+}
+.post-content ins {
+  color: #50fa7b;
+  text-decoration: none;
+}
+.post-content sub,
+.post-content sup {
+  color: #bd93f9;
+}
+.post-content strong,
+.post-content b {
+  color: #ffc66d;
+}
+.post-content .special-tag {
+  background: linear-gradient(45deg, #7fa6ff, #0ff);
+  color: #000;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0.2em;
+}
+.post-content .tag {
+  background: linear-gradient(135deg, #7367f0, #4839eb);
+  color: #fff;
+  padding: 0.2em 0.6em;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin: 0 0.2em;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(115,103,240,0.4);
+  border: none;
+}
+.post-pagination {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.post-pagination .post-prev,
+.post-pagination .post-next {
+  flex: 1;
+}
+.post-pagination .post-prev .nav-label,
+.post-pagination .post-next .nav-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #7fa6ff;
+  margin-bottom: 0.5rem;
+}
+.post-pagination .post-prev a,
+.post-pagination .post-next a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  padding: 1rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.post-pagination .post-prev a:hover,
+.post-pagination .post-next a:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+.post-pagination .post-next {
+  text-align: right;
+}
+a {
+  color: #0ff;
+  text-decoration: none;
+}
+a span {
+  color: #0ff;
+  margin-left: 5px;
+}
